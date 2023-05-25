@@ -28,6 +28,7 @@
 
 body {
 	margin: 0;
+	font-size: var(--font-size);
 }
 
 .result {
@@ -63,5 +64,54 @@ body {
 }
 
 .summary {
-	color: initial;
+	padding: 20px;
+}
+
+.stat {
+	width: 100%;
+	height: 3rem;
+	padding: var(--font-size);
+	border-radius: 8px;
+	margin-top: 16px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.stat span:nth-child(3) {
+	position: absolute;
+	right: var(--font-size);
+}
+
+.value::after {
+	content: ' / 100';
+	opacity: 0.6;
+}
+
+.red {
+	background-color: hsla(0, 100%, 67%, 0.1);
+}
+.red span:nth-child(2) {
+	color: var(--light-red);
+}
+
+.yellow {
+	background-color: hsl(39, 100%, 56%, 0.1);
+}
+.yellow span:nth-child(2) {
+	color: var(--orangey-yellow);
+}
+
+.teal {
+	background-color: hsl(166, 100%, 37%, 0.1);
+}
+.teal span:nth-child(2) {
+	color: var(--green-teal);
+}
+
+.blue {
+	background-color: hsl(234, 85%, 45%, 0.1);
+}
+.blue span:nth-child(2) {
+	color: var(--cobalt-blue);
 }
