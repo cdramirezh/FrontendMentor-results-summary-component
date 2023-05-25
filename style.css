@@ -164,30 +164,24 @@ body {
 	}
 	body > div {
 		grid-row: 1 / 2;
-		height: fit-content;
 		place-self: center;
 		border-bottom-left-radius: 22px;
 		border-bottom-right-radius: 22px;
 		box-shadow: 20px 20px 20px 0px rgb(173 173 173 / 75%);
+		display: flex;
 	}
 	.result {
-		display: inline-block;
+		display: flex;
+		flex-direction: column;
 		border-radius: var(--font-size);
-	}
-	.result h2 {
-		margin-top: 20px;
 	}
 	.result p.circle {
 		width: 167px;
 		height: 167px;
-		margin-top: 29px;
 	}
 	.result p {
 		font-size: 1rem;
 		max-width: 220px;
-	}
-	.summary {
-		display: inline-block;
 	}
 	.attribution {
 		grid-row: 2 / 3;
